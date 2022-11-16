@@ -3,10 +3,13 @@ import express from 'express'
 import * as dotenv from 'dotenv'
 import { apiRouter } from '../api/routers/api.router'
 import unexpectedErrorMiddleware from '~~/api/middlewares/error.global'
+import helmet from 'helmet'
 
 dotenv.config()
 
 const app = express()
+
+app.use(helmet())
 
 app.use(express.json())
 
