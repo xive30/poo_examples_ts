@@ -1,12 +1,9 @@
 import cors from 'cors'
 import express from 'express'
 import * as dotenv from 'dotenv'
+import { apiRouter } from '../api/routers/api.router'
 
 dotenv.config()
-
-let helloWorld = function() {
-    return 'Hello world !';
-}
 
 const app = express()
 
@@ -14,10 +11,7 @@ app.use(express.json())
 
 app.use(cors())
 
-
-app.get('/hello', (req, res) => {
-    res.send(helloWorld())
-  })
+app.use(apiRouter)
 
 app.listen(process.env.PORT, () => console.log('Running.'))
 
