@@ -4,6 +4,7 @@ import * as dotenv from 'dotenv'
 import { apiRouter } from './api/routers/api.router'
 import unexpectedErrorMiddleware from './api/middlewares/error.global'
 import helmet from 'helmet'
+import { logger } from './winston.logger'
 
 dotenv.config()
 
