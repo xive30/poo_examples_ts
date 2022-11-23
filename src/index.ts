@@ -20,5 +20,5 @@ app.use(apiRouter)
 
 app.use(unexpectedErrorMiddleware)
 
-app.listen(process.env.PORT, () => console.log('Running.'))
+app.listen(process.env.PORT, () => logger.info('Running.'))
 
