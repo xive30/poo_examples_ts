@@ -1,6 +1,6 @@
-import { IAnimal } from "./animal.interface";
+import { IAnimal, IPredator } from "./animal.interface";
 
-export class Baboon implements IAnimal {
+export class Baboon implements IAnimal,IPredator {
 
     walk(): void {
         console.log("Carefully, beware big cats !")
@@ -9,7 +9,7 @@ export class Baboon implements IAnimal {
         console.log("Eeeeek !")
     }
     hunt(): void {
-        console.log("Eating small beats")
+        console.log("Eating small beasts")
     }
     
 }

@@ -1,7 +1,7 @@
-import { IAnimal } from "./animal.interface";
-import { Baboon } from "./baboon";
+import { IAnimal, IPredator } from "./animal.interface";
 
-export class Cheetah implements IAnimal {
+
+export class Cheetah implements IAnimal, IPredator {
 
     walk(): void {
         console.log("Like the king (when no lions there)")

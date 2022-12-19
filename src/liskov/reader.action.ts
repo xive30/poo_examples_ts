@@ -8,7 +8,7 @@ export class ReaderAction {
     //add binary reader
 
     public readAll(): void {
-        const toRead: Reader[] = [new TabletReader(), new BookReader()];
+        const toRead: Reader[] = [new TabletReader(), new BookReader(), new BinaryReader()];
         toRead.forEach(reader => console.log(reader.read(0)));
     }
 

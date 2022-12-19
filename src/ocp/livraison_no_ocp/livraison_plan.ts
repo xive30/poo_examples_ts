@@ -24,6 +24,10 @@ export class LivraisonPlan {
                 return 2;
             }
 
+            if (t.getType() == "Brouette") {
+                return 13;
+            }
+
             return 0;
         })
         .reduce((sum, r) => sum + r);

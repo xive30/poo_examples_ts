@@ -1,5 +1,12 @@
-export class Beef {
+import { IAnimal } from "./animal.interface";
 
-    //implements IAnimal and see
+export class Beef implements IAnimal {
+
+    walk(): void {
+        console.log("slowly !");
+    }
+    run():void {
+        console.log("chargee ahead");
+    }
 
 }

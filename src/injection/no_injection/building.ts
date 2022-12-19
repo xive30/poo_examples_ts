@@ -1,7 +1,7 @@
 export class Building {
 
     private ground: Ground = new Ground();
-    private employee: BrushEmployee = new BrushEmployee();
+    private employee: MachineEmployee = new MachineEmployee();
 
     makeMaintenance(): void {
         this.employee.wash(this.ground);
